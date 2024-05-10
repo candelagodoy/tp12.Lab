@@ -17,7 +17,7 @@ public class construirSA {
         try {
             //ESTABLECIENDO CONEXIÓN
             Class.forName("org.mariadb.jdbc.Driver");
-            String url="jdbc:mysql://localhost:3306/construirsa";
+            String url="jdbc:mariadb://localhost:3306/construirsa";
             String usuario="root";
             String password="";
             Connection conexion = DriverManager.getConnection(url, usuario, password);
